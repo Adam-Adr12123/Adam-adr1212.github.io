@@ -1,0 +1,412 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial;
+}
+
+a {
+  text-decoration: none;
+}
+h2 {
+    color: black;
+    font-size: 25px;
+    /* text-shadow: */
+    /* -1px -1px 0 #000, */
+    /* 1px -1px 0 #000, */
+    /* -1px 1px 0 #000, */
+    /* 1px 1px 0 #000; */
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  min-height: 600px;
+}
+
+.tab {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+hr{
+    width: 100px;
+}
+
+.k {
+    color: rgb(251, 255, 0);
+    font-size: 40px;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.322);
+}
+
+p{
+    font-size: 25px;
+}
+/* header*/
+
+div {
+    display:block;
+}
+  
+header {
+    
+    color:rgb(255, 255, 255);
+    height: 110px;
+    width: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+  
+.header-logo {
+    float:left;
+    font-size:36px;
+    padding-top: 10px;
+}
+
+.logo{
+    width: 190px;
+    height: 73px;
+    
+}      
+  
+.header-list {
+    float:right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'lemon milk';
+    font-size: 20px;
+    
+}
+
+.header-list .icon {
+    display: none;
+  }
+
+.header-list a {
+    line-height: 55px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.3s;
+}
+.header-list a:hover{
+    font-size: 25px;
+}
+
+ .header-list .icon {
+    width: 100%;
+}
+
+.header-list a:hover::after{
+    font-size: 30px;
+    content: '';
+    margin: auto;
+    display: block;
+    border-top: 4px solid rgb(251, 255, 0) ;
+    width: 70%;
+    padding-bottom: 5px;
+    margin-bottom: -12px;
+    
+}
+.pad {
+    padding: 0px;
+}
+
+
+.judul {
+    font-family: 'lemon milk';
+    text-align: left;
+    padding: 50px 0px;
+}
+
+/* akhir header */
+
+/* main */
+
+
+
+/* home */
+.home {
+    height: 600px;
+    background-color: rgb(54, 54, 54);
+    background-image: url(../img/s.jpg);
+    overflow: hidden;
+}
+
+
+.jumbotron h2{
+    
+    font-family: "lemon milk";
+    color: white;
+    font-size: 50px;
+    padding-top: 180px;
+    
+    
+    
+
+}
+/* akhir home */
+
+/* profil */
+
+.profil {
+    overflow: hidden;
+}
+
+.profil-satu {
+    color: rgb(0, 0, 0);
+}
+.profil-kiri {
+    
+    width:40%;
+    height: 400px;
+    float: left;
+
+}
+.profil-kiri img{
+    width: 400px;
+}
+
+.profil-kanan {
+    
+    background-color: white;
+    width: 60%;
+    height: 340px;
+    float: left;
+    background-color: transparent;
+}
+
+
+
+.profil-kanan p{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    
+    text-align: justify;
+    font-family: Arial;
+    margin: auto;
+    display: block;
+    border-left: 4px solid rgb(251, 255, 0) ;
+    width: 70%;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    
+}
+
+.pe{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.profil-kanan, .profil-kiri{
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s;
+}
+
+
+.profil-kanan{
+    
+    transform: translate(0, -50px);
+}
+
+.profil-kiri.profil-muncul, .profil-kanan.profil-muncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* akhir profil */
+
+
+/* rp */
+.rp {
+    text-align: center;
+    background-image: url(../img/PP-bg.jpg);
+    background-size: cover;
+    overflow: hidden;
+    color: white;
+}
+
+.pendidikans .pendidikan{
+    opacity: 0;
+    transform: translate(-40px, 0);
+    transition: 0.4s;
+}
+
+.pendidikans .pendidikan.muncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+.pendidikan {
+    float: left;
+    width: 33%;
+    
+}
+
+.pendidikan p{
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.pendidikan img{
+    height: 200px;
+}
+
+.rp h2{
+    color: white;
+}
+
+
+
+/* hobby */
+
+.hobby {
+    overflow: hidden;
+}
+.text-hobby{
+    text-align: justify;
+    
+    font-family: Arial;
+    margin: auto;
+    display: block;
+    border-right: 4px solid rgb(251, 255, 0) ;
+    width: 100%;
+    padding-right: 35px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.hob1 {
+    width: 30%;
+    margin: 0px 10px;
+    transition: 1;
+    transition: all 0.5s;
+}
+
+
+
+.foto-hobby {
+    margin: 40px;
+}
+
+
+
+.text-hobby, .foto-hobby{
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s;
+}
+
+
+.foto-hobby{
+    
+    transform: translate(0, 50px);
+}
+
+.text-hobby.hobby-muncul, .foto-hobby.hobby-muncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+
+
+
+/* contact */
+.contact .container .judul{
+    padding: 10px 0px;
+}
+
+.contact .container .judul h2 span {
+    color: white;
+}
+.contact {
+    background-color: rgb(251, 255, 0);
+}
+
+form {
+    width: 50%;
+    padding: 25px;
+    margin: 15px;
+    box-shadow: 0 2px 5px #f5f5f5; 
+    background: #f5f5f5; 
+    text-align: center;
+}
+    
+input, textarea {
+    width: calc(100% - 18px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    outline: none;
+
+}
+
+input::placeholder {
+    color: #666;
+
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    background: #1c87c9; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+
+}
+
+button:hover {
+    background: #2371a0;
+
+}    
+    
+
+
+
+
+
+/* footer */
+footer {
+    height: 80px;
+    background-color: rgb(54, 54, 54);
+    padding-top:30px;
+    display:block;
+    background-color: black;
+}
+  
+footer img{
+    width:124px;
+}
+  
+footer p{
+    color:#b3aeb5;
+    font-size:12px;
+    
+}
+
+footer .container {
+    height: 80px;
+}
+/* akhir footer*/
+
+
+
